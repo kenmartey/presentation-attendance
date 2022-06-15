@@ -152,4 +152,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # For Django 4
-CSRF_TRUSTED_ORIGINS = ['https://sucasa-presentation.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['sucasa-presentation.herokuapp.com']
