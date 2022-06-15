@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 import os
 from pathlib import Path
 
+import dj_database_url
+
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -92,6 +94,9 @@ WSGI_APPLICATION = 'sucasapresentation.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+if DEBUG is False:
+    DATABASES = {'default': dj_database_url.config(
+        default='postgres://localhost')}
 
 DATABASES = {
 
