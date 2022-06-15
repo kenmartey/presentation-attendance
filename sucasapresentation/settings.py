@@ -95,8 +95,7 @@ WSGI_APPLICATION = 'sucasapresentation.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 if DEBUG is False:
-    DATABASES = {'default': dj_database_url.config(
-        default='postgres://localhost')}
+    DATABASES = {'default' : dj_database_url.config() }
 
 DATABASES = {
 
