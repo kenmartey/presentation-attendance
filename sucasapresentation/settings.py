@@ -158,4 +158,4 @@ CORS_ORIGIN_ALLOW_ALL = True
 #     'https://sucasa-presentation.herokuapp.com/',
 #     'https://mellow-fudge-86498a.netlify.app',
 #     'http://localhost:3000', 'http://127.0.0.0:3000']
-# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
