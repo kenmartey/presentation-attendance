@@ -55,7 +55,7 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
-#### create .env file and fill it with info in the .sample_env, then change the values.
+#### create .env file and update it with .sample_env, then change the values. envs are managed with dotenv library.
 
 ```bash
 .env
