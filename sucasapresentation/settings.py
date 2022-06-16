@@ -61,6 +61,7 @@ THIRD_PARTY_APPS = [
 INSTALLED_APPS += THIRD_PARTY_APPS + LOCAL_APPS
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -153,5 +154,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # For Django 4
 CSRF_TRUSTED_ORIGINS = [
-    'https://sucasa-presentation.herokuapp.com/', 'https://mellow-fudge-86498a.netlify.app/']
+    'https://sucasa-presentation.herokuapp.com/',
+    'https://mellow-fudge-86498a.netlify.app',
+    'http://localhost:3000', 'http://127.0.0.0:3000']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
