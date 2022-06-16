@@ -153,5 +153,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # For Django 4
 CSRF_TRUSTED_ORIGINS = [
-    'https://sucasa-presentation.herokuapp.com/', 'http://localhost:3000']
+    'https://sucasa-presentation.herokuapp.com/', 'https://mellow-fudge-86498a.netlify.app/']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
