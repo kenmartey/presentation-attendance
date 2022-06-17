@@ -159,7 +159,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #     'https://sucasa-presentation.herokuapp.com/',
 #     'https://mellow-fudge-86498a.netlify.app',
 #     'http://localhost:3000', 'http://127.0.0.0:3000']
-# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',  # for localhost (REACT Default)
     'http://192.168.10.45:3000',  # for network
