@@ -56,6 +56,7 @@ THIRD_PARTY_APPS = [
     "rest_framework",
     "corsheaders",
     "rest_framework.authtoken",
+    "drf_yasg",
 
 ]
 
@@ -166,3 +167,6 @@ CORS_ORIGIN_WHITELIST = (
     'https://sucasa-presentation.herokuapp.com',
     'https://mellow-fudge-86498a.netlify.app',
 )
+
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema'}

@@ -16,9 +16,10 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
-# from drf_yasg.views import get_schema_view
-# from drf_yasg import openapi
-# from swagger_ui import api_doc
+
+from drf_yasg.views import get_schema_view
+from drf_yasg import openapi
+
 
 API_BASE_URL = 'api'
 
@@ -32,18 +33,18 @@ urlpatterns = [
 ]
 
 # swagger api doc
-# api_info = openapi.Info(
-#     title="Sucasa Presentation API",
-#     default_version="v1",
-#     description="API documentation for Sucasa Presentation",
-# )
+api_info = openapi.Info(
+    title="Sucasa Presentation API",
+    default_version="v1",
+    description="API documentation for Sucasa Presentation",
+)
 
-# schema_view = get_schema_view(
-#     api_info,
-#     public=True,
+schema_view = get_schema_view(
+    api_info,
+    public=True,
 
-# )
-# urlpatterns += [
-#     path("api-docs/", schema_view.with_ui("swagger",
-#          cache_timeout=0), name="api_docs")
-# ]
+)
+urlpatterns += [
+    path("api-docs/", schema_view.with_ui("swagger",
+         cache_timeout=0), name="api_docs")
+]
