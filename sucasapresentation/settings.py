@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG')
 
-ALLOWED_HOSTS = ['*', ]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -168,5 +168,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #     'https://sucasa-presentation.herokuapp.com',
 #     'https://mellow-fudge-86498a.netlify.app',
 # )
-CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOW_CREDENTIALS = False
+CORS_ALLOW_HEADERS = ['*']
