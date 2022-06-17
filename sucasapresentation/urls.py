@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 # from drf_yasg.views import get_schema_view
 # from drf_yasg import openapi
+# from swagger_ui import api_doc
 
 API_BASE_URL = 'api'
 
@@ -26,7 +27,8 @@ urlpatterns = [
     path(f'{API_BASE_URL}/v1/', include("apps.presentation.api.v1.urls")),
     path(f'{API_BASE_URL}/v1/', include("apps.attendee.api.v1.urls")),
     path(f'{API_BASE_URL}/v1/',
-         include("apps.presentation_attendance.api.v1.urls"))
+         include("apps.presentation_attendance.api.v1.urls")),
+
 ]
 
 # swagger api doc
